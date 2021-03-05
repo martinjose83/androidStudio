@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="showhomePage4btn"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/logoutbtn"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:onClick="logout"
+                android:text="Logout" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/plistView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:cacheColorHint="#56789444"></ListView>
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:stretchColumns="0"
+        android:id="@+id/buttonTableLayout"
+        android:background="#00000000">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonRow">
+
+
+
+            <Button
+                android:id="@+id/myFadditembtn"
+                android:layout_weight="0.5"
+                android:onClick="addTaskMyPage"
+                android:text="@string/Addtask">
+
+            </Button>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

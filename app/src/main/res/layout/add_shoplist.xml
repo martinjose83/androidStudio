@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill all the fields and add to list" />
+
+    <EditText
+        android:id="@+id/shopItemET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter the Item to Add"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/shopQntyET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Quantity:"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/addshoplistbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="additem"
+        android:text="Add to ShoppingList" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showmyFpage4btn"
+        android:text="Back" />
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="Logout" />
+</LinearLayout>
